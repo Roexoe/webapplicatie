@@ -1,0 +1,196 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  background-color: #F7F3E9; /* Crèmekleurig */
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Header styles */
+header {
+  height: 100px;
+  background-color: #B92B27; /* Rijk Rood */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.header-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-options button {
+  height: 40px;
+  width: 100px;
+  background-color: #4B6D41; /* Olijfgroen */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.header-options button.logo {
+  height: 40px;
+  width: 300px;
+  background-color: #ffffff; /* Terracotta */
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.header-options button:hover {
+  background-color: #D9A718; /* Goudgeel */
+}
+
+/* Login and logout button styles */
+.header-options button.login {
+  margin-left: auto;
+}
+
+.header-options button.logout {
+  margin-right: auto;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ccc;
+}
+
+th {
+  font-weight: bold;
+  color: #fff;
+  background-color: #555; /* Olijfgroen */
+}
+
+tr:nth-child(even) {
+  background-color: #F7F3E9; /* Crèmekleurig */
+}
+
+/* Form styles */
+form {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: calc(100% - 20px); /* Adjusted to accommodate padding */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+  margin-top: 2rem;
+}
+
+.form-message {
+  margin-top: 1rem;
+  color: #fff;
+  background-color: #555; /* Olijfgroen */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-message.success {
+  background-color: #4CAF50; /* Goudgeel */
+}
+
+.form-message.error {
+  background-color: #696969; /* Rijk Rood */
+}
+
+.button {
+  height: 40px;
+  width: 100px;
+  background-color: #555; /* Olijfgroen */
+  color: #fff;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: 0 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.menu-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to next line if needed */
+  justify-content: center; /* Center cards horizontally */
+}
+
+/* Menu card styles */
+.gerechtblok {
+  width: 500px;
+  height: 600px;
+  margin: 10px;
+  background-color: #FFFFFF; /* Crèmekleurig */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu card title */
+.gerechtblok .gerechtnaam {
+  font-size: 30px;
+  font-weight: bold;
+  color: #333333; /* Terracotta */
+}
+
+/* Menu card description */
+.gerechtblok .gerechtbeschrijving {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #666666; /* Rijk Rood */
+}
+
+/* Menu card price */
+.gerechtblok .gerechtprijs {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #009900; /* Goudgeel */
+}
+
+/* Responsive image */
+.gerechtblok img {
+  max-width: 100%;
+  min-width: 400px;
+  min-height: 200px; /* Adjust the minimum height as needed */
+  object-fit: cover; /* Ensure the entire image is visible */
+  border-radius: 5px;
+}
